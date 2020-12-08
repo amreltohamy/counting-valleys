@@ -1,6 +1,6 @@
 import Cocoa
 
-func countingValley(steps: Int, path: String) -> Int {
+func countingValleys(steps: Int, path: String) -> Int {
     // Write your code here
 
     var ups = 0
@@ -32,32 +32,8 @@ func countingValley(steps: Int, path: String) -> Int {
     return vallyCounter
 }
 var string = "UUDDDDDUUUUUDDDDDUUDDUUUUUDDDDUUDDUU"
-countingValley(steps: 26, path: string)
+countingValleys(steps: 26, path: string)
 
 
-func countingValleys(n: Int, s: String) -> Int {
-    var valley = 0
-    var countU = 0
-    var reachGround = true
-    for step in s{
-        
-        if(step == "U"){
-            countU  = countU + 1
-            
-        }else{
-            countU = countU - 1
-        }
-      
-        if(countU < 0 && reachGround){
-            valley = valley+1
-            reachGround = false
-        }
-        if(countU == 0){
-            reachGround = true
-        }
-        
-    }
-    return valley
-    }
-countingValleys(n: 8, s: string)  //Expected: 1
-countingValleys(n: 12, s: "DDUUDDUDUUUD") //Expected : 2
+countingValleys(steps: 8, path: string)  //Expected: 1
+countingValleys(steps: 12, path: "DDUUDDUDUUUD") //Expected : 2

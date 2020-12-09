@@ -1,12 +1,12 @@
 import Cocoa
 
 func repeatedString(s: String, n: Int) -> Int {
+
     let newString =  CreateString(sring: s, number: n)
     print(newString)
     return findNumberOfa(totalWord:newString)
 }
 func CreateString(sring: String, number: Int) -> String {
-    
     var index = 0
     var newString = ""
     while index < number/sring.count {
@@ -24,8 +24,10 @@ func findNumberOfa(totalWord:String)->Int{
             counter+=1
         }
     }
-    
+
     return counter
 }
-repeatedString(s: "amr", n: 25)
+repeatedString(s: "azab", n: 26)
+
+
 

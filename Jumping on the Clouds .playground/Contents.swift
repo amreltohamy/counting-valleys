@@ -4,7 +4,6 @@ func jumpingOnClouds(c: [Int]) -> Int {
     if c.count <= 0 {
           return 0
       }
-      
       if c.count == 1 {
           if c[0] == 1 {
               return 0
@@ -12,10 +11,10 @@ func jumpingOnClouds(c: [Int]) -> Int {
               return 1
           }
       }
-      
       if c[0] == 1 && c[1] == 1{
           return 0
       }
+    
     var i = 0
     var count = 0
     
@@ -33,5 +32,5 @@ func jumpingOnClouds(c: [Int]) -> Int {
     
     return count
 }
- var array =  [0,0,1,0,0,0,1,0,0,0]
+ var array =  [0,0,1,0,0,0,1,0,1,0]
 jumpingOnClouds(c:array)

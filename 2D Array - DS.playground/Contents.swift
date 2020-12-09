@@ -1,3 +1,7 @@
 import Cocoa
 
-var str = "Hello, playground"
+func hourglassSum(arr: [[Int]]) -> Int {
+
+
+    return 1
+}

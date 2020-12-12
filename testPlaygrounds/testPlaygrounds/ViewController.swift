@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        plusMinus(arr: [1,2,3,0,0,-1,-2,-5,0])
+        staircase(n: 6)
     }
 
   
@@ -34,6 +34,18 @@ class ViewController: UIViewController {
         print(String(format: "%.6f", postives/count))
         print(String(format: "%.6f", negatives/count))
         print(String(format: "%.6f", zeros/count))
+    }
+    func staircase(n: Int) -> Void {
+        var hash = ""
+        for _ in 0 ... n-1 {
+            hash+=" "
+        }
+        for _ in 0 ... n-1 {
+            hash.removeFirst()
+            hash+="#"
+            print(hash)
+        }
+
     }
 
   
